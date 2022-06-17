@@ -57,6 +57,7 @@ namespace TP5
                 consulta_min = double.Parse(txt_consulta_min.Text);
                 consulta_max = double.Parse(txt_consulta_max.Text);
                 porc_retiran_biblo = double.Parse(txt_probabilidad_retirarse.Text) / 100;
+
                 tiempo_uso_instalacion = int.Parse(txt_tiempo_uso_instalacion.Text);
                 prob_pedido = double.Parse(txt_pedido.Text) / 100;
                 prob_devolucion = double.Parse(txt_devolucion.Text) / 100;

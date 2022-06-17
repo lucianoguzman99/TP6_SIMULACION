@@ -40,46 +40,71 @@ namespace TP5.Clases
         private bool iteracciones_cumplidas = false;
 
         // Euler
-        private double k;
+        private int k;
         //private double kDynamic;
         private double h;
+        private double tiempoLectura;
 
+
+        //globales euler
+        double t = 0;
+        double p = 0;
+        double eulerValue = 0;
+        double pAnterior = 0;
+
+        double tiempo1;
+        double tiempo2;
+        double tiempo3;
+        int cont = 0;
 
         private void euler()
         {
-            h = 0.1;
-            double rndEuler = random.NextDouble();
-            k = 100 + rndEuler * (350 - 100);
-            double t = 0;
-            double tAnterior = 0;
-            double p = 0;
-            double aux;
-            double euler=0;
+            // if H no es cargada:
+            double h = 0.1;
 
-            if(100<= k && k < 200)
-            {
-                aux = 100;
-            } else if(200 <= k && k <= 300)
-            {
-                aux = 200;
-            }else
-            {
-                aux = 300;
-            }
-            Console.WriteLine("t\t p\t dp/dt\t t+1\t p+1");
-            while (p<=aux)
-            {
-                Console.WriteLine("{0:0.###}\t {1:0.###}\t {2:0.###} {3:0.###}\t {4:0.###}", t, p, euler, t+h, p+h*euler);
-                euler = aux / 5;
-                t = t + h;
-                p = p + h * euler;
-            }
+            int[] valuesEuler = { 100, 200, 300 };
 
+            foreach (int i in valuesEuler)
+            {
+                createEuler(i, h);
+                Console.WriteLine("\n\n\n");
+            }
         }
 
 
+        private void createEuler(double aux, double h)
+        {
+            // limpio valores
+            double t = 0;
+            double tAnt = 0;
+            double p = 0;
 
-        public Simulacion(Form1 formulario)
+            Console.WriteLine("\t\t\t\t" + aux);
+            Console.WriteLine( "t\t p\t dp/dt\t t+1\t p+1");
+            while (pAnterior < aux)
+            {
+                tAnt = t;
+                pAnterior = p;
+                Console.WriteLine("{0:0.###}\t {1:0.###}\t {2:0.###}\t {3:0.###}\t {4:0.###}\t {5:0.###} ", t, p, eulerValue, t + h, p + h * eulerValue, aux);
+                eulerValue = aux / 5;
+                t += h;
+                p += h * eulerValue;
+            }
+
+            if (cont == 0) {
+                tiempo1 = tAnt;
+            } else if (cont == 0) {
+                tiempo2 = tAnt;
+            } else
+            {
+                tiempo3 = tAnt;
+            }
+            cont += 1;
+        }
+          
+
+
+    public Simulacion(Form1 formulario)
         {
             this.formulario = formulario;
         }
@@ -87,6 +112,7 @@ namespace TP5.Clases
         // Genera columnas del DataTable
         private void generar_dt()
         {
+            //genera y cargar las 3 tablas en el grid
             euler();
             dataTable = new DataTable();
 
@@ -411,8 +437,19 @@ namespace TP5.Clases
                 rnd_permanencia = redondear(random.NextDouble());
                 if (calcular_probabilidad_permanencia(rnd_permanencia))
                 {
+
+                    // Validar con la tabla el K y que devuelva el T
+                    // if  K no es cargada:
+                    double rndEuler = random.NextDouble();
+                    k = (int)(100 + rndEuler * (350 - 100));
+
+                    //funcion validar K con tabla
+                    validateK(k);
+
                     clientes_llegaron_biblioteca.Find(cli => cli.Equals(cliente)).setEstado(Cliente.LEYENDO);
-                    clientes_llegaron_biblioteca.Find(cli => cli.Equals(cliente)).setFin_uso_instalacion((reloj + formulario.tiempo_uso_instalacion).ToString());
+
+                    clientes_llegaron_biblioteca.Find(cli => cli.Equals(cliente)).setFin_uso_instalacion((reloj + tiempoLectura).ToString());
+                    tiempoLectura = 0;
                     cliente.setPidioLibro(true);
                     // verificar si influye en la carga del 
                     tiempo_permanencia += formulario.tiempo_uso_instalacion;
@@ -429,7 +466,26 @@ namespace TP5.Clases
                 cliente.salio_instalacion();
             }
         }
- 
+
+        private void validateK(double k)
+        {
+            if (100 <= k && k < 200)
+            {
+                //validar tabla 100
+                tiempoLectura = tiempo1 * 10;
+            }
+            else if (200 <= k && k <= 300)
+            {
+                //validar tabla 200
+                tiempoLectura = tiempo2 *10;
+            }
+            else
+            {
+                // validar tabla 300
+                tiempoLectura = tiempo3 *10;
+            }
+        }
+
         private void agregar_columnas_persona(List<Cliente> clientes)
         {
             if (formulario.mostrar_columnas_estado)

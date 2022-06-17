@@ -76,7 +76,7 @@
             this.dgv_simulacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_simulacion.Location = new System.Drawing.Point(12, 125);
             this.dgv_simulacion.Name = "dgv_simulacion";
-            this.dgv_simulacion.Size = new System.Drawing.Size(1454, 696);
+            this.dgv_simulacion.Size = new System.Drawing.Size(1447, 696);
             this.dgv_simulacion.TabIndex = 10;
             // 
             // txt_tiempo_simular
@@ -91,9 +91,9 @@
             // btn_simular
             // 
             this.btn_simular.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_simular.Location = new System.Drawing.Point(1370, 12);
+            this.btn_simular.Location = new System.Drawing.Point(1308, 50);
             this.btn_simular.Name = "btn_simular";
-            this.btn_simular.Size = new System.Drawing.Size(96, 107);
+            this.btn_simular.Size = new System.Drawing.Size(151, 55);
             this.btn_simular.TabIndex = 9;
             this.btn_simular.Text = "Simular";
             this.btn_simular.UseVisualStyleBackColor = true;
@@ -421,7 +421,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1344, 749);
+            this.ClientSize = new System.Drawing.Size(1471, 749);
             this.Controls.Add(this.hLabel);
             this.Controls.Add(this.kLabel);
             this.Controls.Add(this.hValue);

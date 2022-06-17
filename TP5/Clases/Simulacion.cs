@@ -67,15 +67,13 @@ namespace TP5.Clases
                 aux = 300;
             }
             Console.WriteLine("t\t p\t dp/dt\t t+1\t p+1");
-            while (p<aux)
+            while (p<=aux)
             {
                 Console.WriteLine("{0:0.###}\t {1:0.###}\t {2:0.###} {3:0.###}\t {4:0.###}", t, p, euler, t+h, p+h*euler);
-                euler = k / 5;
+                euler = aux / 5;
                 t = t + h;
                 p = p + h * euler;
             }
-            
-           
 
         }
 
@@ -89,6 +87,7 @@ namespace TP5.Clases
         // Genera columnas del DataTable
         private void generar_dt()
         {
+            euler();
             dataTable = new DataTable();
 
             dataTable.Columns.Add("i");

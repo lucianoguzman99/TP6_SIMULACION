@@ -64,8 +64,8 @@ namespace TP5
                 hora_desde = int.Parse(txt_desde_hora.Text);
                 cantidad_iteracciones = int.Parse(txt_iteracciones.Text);
                 llegada_personas = double.Parse(txt_tiempo_llegadas.Text);
-                k = double.Parse(kValue.Text);
-                h = double.Parse(hValue.Text);
+                //k = double.Parse(kValue.Text);
+                //h = double.Parse(hValue.Text);
 
                 if (!validar_probabilidades())
                 {

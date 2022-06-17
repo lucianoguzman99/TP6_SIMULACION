@@ -41,7 +41,7 @@ namespace TP5.Clases
 
         // Euler
         private int k;
-        //private double kDynamic;
+        private double kDynamic;
         private double h;
         private double tiempoLectura;
 
@@ -52,6 +52,7 @@ namespace TP5.Clases
         double eulerValue = 0;
         double pAnterior = 0;
 
+        // T de cada euler con su K. DAN TODOS LO MISMO
         double tiempo1;
         double tiempo2;
         double tiempo3;
@@ -59,6 +60,7 @@ namespace TP5.Clases
 
         private void euler()
         {
+            // TO DO:
             // if H no es cargada:
             double h = 0.1;
 
@@ -85,12 +87,13 @@ namespace TP5.Clases
             {
                 tAnt = t;
                 pAnterior = p;
-                Console.WriteLine("{0:0.###}\t {1:0.###}\t {2:0.###}\t {3:0.###}\t {4:0.###}\t {5:0.###} ", t, p, eulerValue, t + h, p + h * eulerValue, aux);
+                Console.WriteLine("{0:0.###}\t {1:0.###}\t {2:0.###}\t {3:0.###}\t {4:0.###}\t {5:0.###} ", t, p, eulerValue, t + h, p + h * eulerValue);
                 eulerValue = aux / 5;
                 t += h;
                 p += h * eulerValue;
             }
 
+            // Funciona pero refactorizar
             if (cont == 0) {
                 tiempo1 = tAnt;
             } else if (cont == 0) {
@@ -112,7 +115,8 @@ namespace TP5.Clases
         // Genera columnas del DataTable
         private void generar_dt()
         {
-            //genera y cargar las 3 tablas en el grid
+            // Genera 3 tablas de euler
+            // TO DO : Hacer un grid
             euler();
             dataTable = new DataTable();
 
@@ -437,13 +441,12 @@ namespace TP5.Clases
                 rnd_permanencia = redondear(random.NextDouble());
                 if (calcular_probabilidad_permanencia(rnd_permanencia))
                 {
-
-                    // Validar con la tabla el K y que devuelva el T
+                    // TO DO: TOMAR VALOR DE CARGA DE K 
                     // if  K no es cargada:
                     double rndEuler = random.NextDouble();
                     k = (int)(100 + rndEuler * (350 - 100));
 
-                    //funcion validar K con tabla
+                    // Funcion validar K con tabla
                     validateK(k);
 
                     clientes_llegaron_biblioteca.Find(cli => cli.Equals(cliente)).setEstado(Cliente.LEYENDO);
@@ -469,19 +472,17 @@ namespace TP5.Clases
 
         private void validateK(double k)
         {
+            // Siempre da el mismo valor xd
             if (100 <= k && k < 200)
             {
-                //validar tabla 100
                 tiempoLectura = tiempo1 * 10;
             }
             else if (200 <= k && k <= 300)
             {
-                //validar tabla 200
                 tiempoLectura = tiempo2 *10;
             }
             else
             {
-                // validar tabla 300
                 tiempoLectura = tiempo3 *10;
             }
         }

@@ -16,7 +16,7 @@ namespace TP5
         // Variables
         public int reloj_max; // X
         public int cantidad_iteracciones; // i iteracciones desde la hora j
-        public double hora_desde; // j
+        public double hora_desde ; // j
         public double llegada_personas;
         public double prob_pedido;
         public double prob_devolucion;
@@ -24,7 +24,7 @@ namespace TP5
         public double consulta_min;
         public double consulta_max;
         public double porc_retiran_biblo;
-        public int tiempo_uso_instalacion;
+        public int tiempo_uso_instalacion ;
         public bool mostrar_columnas_estado = true;
 
         public Form1()
@@ -152,25 +152,26 @@ namespace TP5
                 dt2.ImportRow(dr);
 
                 // i = Filas, j = Columnas
-                int cantidad_columnas = dt2.Columns.Count;
-                int cantidad_filas = dt2.Rows.Count;
-                List<int> columnas_a_eliminar = new List<int>();
-                for (int j = 16; j < cantidad_columnas; j++)
-                {
-                    bool eliminar_columna = true;
-                    string nombre_columna = dt2.Columns[j].ColumnName;
-                    for (int i = 0; i < cantidad_filas; i++)
-                    {
-                        if (!string.IsNullOrEmpty(dt2.Rows[i][nombre_columna].ToString()))
-                        {
-                            eliminar_columna = false;
-                        }
-                    }
+                //int cantidad_columnas = dt2.Columns.Count;
+                //int cantidad_filas = dt2.Rows.Count;
+                //List<int> columnas_a_eliminar = new List<int>();
+                //for (int j = 16; j < cantidad_columnas; j++)
+                //{
+                //    bool eliminar_columna = true;
+                //    string nombre_columna = dt2.Columns[j].ColumnName;
+                //    for (int i = 0; i < cantidad_filas; i++)
+                //    {
+                //        if (!string.IsNullOrEmpty(dt2.Rows[i][nombre_columna].ToString()))
+                //        {
+                //            eliminar_columna = false;
+                //        }
+                        
+                //    }
 
-                    if (eliminar_columna)
-                    {
-                        columnas_a_eliminar.Add(j);
-                    }
+                   // if (eliminar_columna)
+                    //{
+                     //   columnas_a_eliminar.Add(j);
+                   // }
                 }
 
                 // Se eliminan las columnas de la lista. Se hace un reverse primero asi se eliminan de atras para delante y no modifica los indices de los que estan adelante

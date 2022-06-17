@@ -373,6 +373,7 @@ namespace TP5.Clases
                     clientes_llegaron_biblioteca.Find(cli => cli.Equals(cliente)).setEstado(Cliente.LEYENDO);
                     clientes_llegaron_biblioteca.Find(cli => cli.Equals(cliente)).setFin_uso_instalacion((reloj + formulario.tiempo_uso_instalacion).ToString());
                     cliente.setPidioLibro(true);
+                    // verificar si influye en la carga del 
                     tiempo_permanencia += formulario.tiempo_uso_instalacion;
                 }
                 else
@@ -400,6 +401,28 @@ namespace TP5.Clases
                         DataColumn column_estado = new DataColumn("Estado (" + persona + ")");
                         dataTable.Columns.Add(column_estado);
                     }
+                    if (!dataTable.Columns.Contains("Estado (" + persona + ")"))
+                    {
+                        DataColumn column_estado = new DataColumn("Estado (" + persona + ")");
+                        dataTable.Columns.Add(column_estado);
+                    }
+                    if (!dataTable.Columns.Contains("Estado (" + persona + ")"))
+                    {
+                        DataColumn column_estado = new DataColumn("Estado (" + persona + ")");
+                        dataTable.Columns.Add(column_estado);
+                    }
+                    if (!dataTable.Columns.Contains("Estado (" + persona + ")"))
+                    {
+                        DataColumn column_estado = new DataColumn("Estado (" + persona + ")");
+                        dataTable.Columns.Add(column_estado);
+                    }
+                    if (!dataTable.Columns.Contains("Estado (" + persona + ")"))
+                    {
+                        DataColumn column_estado = new DataColumn("Estado (" + persona + ")");
+                        dataTable.Columns.Add(column_estado);
+                    }
+
+
 
                     if (!dataTable.Columns.Contains("Hs llegada (" + persona + ")"))
                     {

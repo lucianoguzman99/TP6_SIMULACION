@@ -152,21 +152,21 @@ namespace TP5
                 dt2.ImportRow(dr);
 
                 // i = Filas, j = Columnas
-                //int cantidad_columnas = dt2.Columns.Count;
-                //int cantidad_filas = dt2.Rows.Count;
-                //List<int> columnas_a_eliminar = new List<int>();
-                //for (int j = 16; j < cantidad_columnas; j++)
-                //{
-                //    bool eliminar_columna = true;
-                //    string nombre_columna = dt2.Columns[j].ColumnName;
-                //    for (int i = 0; i < cantidad_filas; i++)
-                //    {
-                //        if (!string.IsNullOrEmpty(dt2.Rows[i][nombre_columna].ToString()))
-                //        {
-                //            eliminar_columna = false;
-                //        }
+                int cantidad_columnas = dt2.Columns.Count;
+                int cantidad_filas = dt2.Rows.Count;
+                List<int> columnas_a_eliminar = new List<int>();
+                for (int j = 16; j < cantidad_columnas; j++)
+                {
+                    bool eliminar_columna = true;
+                    string nombre_columna = dt2.Columns[j].ColumnName;
+                    for (int i = 0; i < cantidad_filas; i++)
+                    {
+                        if (!string.IsNullOrEmpty(dt2.Rows[i][nombre_columna].ToString()))
+                        {
+                            eliminar_columna = false;
+                        }
                         
-                //    }
+                    }
 
                    // if (eliminar_columna)
                     //{

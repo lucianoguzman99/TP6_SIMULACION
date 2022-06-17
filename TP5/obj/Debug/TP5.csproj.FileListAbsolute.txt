@@ -18,3 +18,14 @@ D:\Programacion\TP6_SIMULACION\TP5\obj\Debug\TP5.csproj.GenerateResource.cache
 D:\Programacion\TP6_SIMULACION\TP5\obj\Debug\TP5.csproj.CoreCompileInputs.cache
 D:\Programacion\TP6_SIMULACION\TP5\obj\Debug\TP5.exe
 D:\Programacion\TP6_SIMULACION\TP5\obj\Debug\TP5.pdb
+C:\Users\gino_\OneDrive\Escritorio\Facultad\SIM-2022\Trabajos_practicos\TP6\proyecto\TP5\bin\Debug\TP5.exe.config
+C:\Users\gino_\OneDrive\Escritorio\Facultad\SIM-2022\Trabajos_practicos\TP6\proyecto\TP5\bin\Debug\TP5.exe
+C:\Users\gino_\OneDrive\Escritorio\Facultad\SIM-2022\Trabajos_practicos\TP6\proyecto\TP5\bin\Debug\TP5.pdb
+C:\Users\gino_\OneDrive\Escritorio\Facultad\SIM-2022\Trabajos_practicos\TP6\proyecto\TP5\obj\Debug\TP5.csproj.AssemblyReference.cache
+C:\Users\gino_\OneDrive\Escritorio\Facultad\SIM-2022\Trabajos_practicos\TP6\proyecto\TP5\obj\Debug\TP5.csproj.SuggestedBindingRedirects.cache
+C:\Users\gino_\OneDrive\Escritorio\Facultad\SIM-2022\Trabajos_practicos\TP6\proyecto\TP5\obj\Debug\TP5.Form1.resources
+C:\Users\gino_\OneDrive\Escritorio\Facultad\SIM-2022\Trabajos_practicos\TP6\proyecto\TP5\obj\Debug\TP5.Properties.Resources.resources
+C:\Users\gino_\OneDrive\Escritorio\Facultad\SIM-2022\Trabajos_practicos\TP6\proyecto\TP5\obj\Debug\TP5.csproj.GenerateResource.cache
+C:\Users\gino_\OneDrive\Escritorio\Facultad\SIM-2022\Trabajos_practicos\TP6\proyecto\TP5\obj\Debug\TP5.csproj.CoreCompileInputs.cache
+C:\Users\gino_\OneDrive\Escritorio\Facultad\SIM-2022\Trabajos_practicos\TP6\proyecto\TP5\obj\Debug\TP5.exe
+C:\Users\gino_\OneDrive\Escritorio\Facultad\SIM-2022\Trabajos_practicos\TP6\proyecto\TP5\obj\Debug\TP5.pdb

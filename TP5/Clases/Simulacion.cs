@@ -41,26 +41,41 @@ namespace TP5.Clases
 
         // Euler
         private double k;
-        private double kDynamic;
-
+        //private double kDynamic;
         private double h;
 
 
         private void euler()
         {
-            double h = 0.1;
+            h = 0.1;
             double rndEuler = random.NextDouble();
+            k = 100 + rndEuler * (350 - 100);
+            double t = 0;
+            double tAnterior = 0;
+            double p = 0;
+            double aux;
+            double euler=0;
 
-            double euler = k / 5;
-            
-            switch (k) {
-                case Double(k) > 299:
-                    break;
-                case k > 199:
-                    break;
-                case k > 100:
-                    break;
+            if(100<= k && k < 200)
+            {
+                aux = 100;
+            } else if(200 <= k && k <= 300)
+            {
+                aux = 200;
+            }else
+            {
+                aux = 300;
             }
+            Console.WriteLine("t\t p\t dp/dt\t t+1\t p+1");
+            while (p<aux)
+            {
+                Console.WriteLine("{0:0.###}\t {1:0.###}\t {2:0.###} {3:0.###}\t {4:0.###}", t, p, euler, t+h, p+h*euler);
+                euler = k / 5;
+                t = t + h;
+                p = p + h * euler;
+            }
+            
+           
 
         }
 

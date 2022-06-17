@@ -87,7 +87,7 @@ namespace TP5.Clases
             {
                 tAnt = t;
                 pAnterior = p;
-                Console.WriteLine("{0:0.###}\t {1:0.###}\t {2:0.###}\t {3:0.###}\t {4:0.###}\t {5:0.###} ", t, p, eulerValue, t + h, p + h * eulerValue);
+                Console.WriteLine("{0:0.###}\t {1:0.###}\t {2:0.###}\t {3:0.###}\t {4:0.###} ", t, p, eulerValue, t + h, p + h * eulerValue);
                 eulerValue = aux / 5;
                 t += h;
                 p += h * eulerValue;

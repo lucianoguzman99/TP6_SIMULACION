@@ -39,6 +39,33 @@ namespace TP5.Clases
         private int cantidad_iteracciones = 0;
         private bool iteracciones_cumplidas = false;
 
+        // Euler
+        private double k;
+        private double kDynamic;
+
+        private double h;
+
+
+        private void euler()
+        {
+            double h = 0.1;
+            double rndEuler = random.NextDouble();
+
+            double euler = k / 5;
+            
+            switch (k) {
+                case Double(k) > 299:
+                    break;
+                case k > 199:
+                    break;
+                case k > 100:
+                    break;
+            }
+
+        }
+
+
+
         public Simulacion(Form1 formulario)
         {
             this.formulario = formulario;

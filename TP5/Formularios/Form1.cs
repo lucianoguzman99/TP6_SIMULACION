@@ -26,6 +26,9 @@ namespace TP5
         public double porc_retiran_biblo;
         public int tiempo_uso_instalacion ;
         public bool mostrar_columnas_estado = true;
+        public double k;
+        public double h;
+
 
         public Form1()
         {
@@ -155,24 +158,24 @@ namespace TP5
                 int cantidad_columnas = dt2.Columns.Count;
                 int cantidad_filas = dt2.Rows.Count;
                 List<int> columnas_a_eliminar = new List<int>();
-                for (int j = 16; j < cantidad_columnas; j++)
-                {
-                    bool eliminar_columna = true;
-                    string nombre_columna = dt2.Columns[j].ColumnName;
-                    for (int i = 0; i < cantidad_filas; i++)
-                    {
-                        if (!string.IsNullOrEmpty(dt2.Rows[i][nombre_columna].ToString()))
-                        {
-                            eliminar_columna = false;
-                        }
+                //for (int j = 16; j < cantidad_columnas; j++)
+                //{
+                //    bool eliminar_columna = true;
+                //    string nombre_columna = dt2.Columns[j].ColumnName;
+                //    for (int i = 0; i < cantidad_filas; i++)
+                //    {
+                //        if (!string.IsNullOrEmpty(dt2.Rows[i][nombre_columna].ToString()))
+                //        {
+                //            eliminar_columna = false;
+                //        }
                         
-                    }
+                //    }
 
                    // if (eliminar_columna)
                     //{
                      //   columnas_a_eliminar.Add(j);
                    // }
-                }
+                //}
 
                 // Se eliminan las columnas de la lista. Se hace un reverse primero asi se eliminan de atras para delante y no modifica los indices de los que estan adelante
                 columnas_a_eliminar.Reverse();
@@ -202,6 +205,17 @@ namespace TP5
         private void checkbox_columnas_CheckedChanged(object sender, EventArgs e)
         {
             this.mostrar_columnas_estado = !this.mostrar_columnas_estado;
+        }
+
+        private void kValue_TextChanged(object sender, EventArgs e)
+        {
+            this.kValue = this.kValue;
+        }
+
+        private void hValue_TextChanged(object sender, EventArgs e)
+        {
+            this.hValue = this.hValue;
+
         }
     }
 }

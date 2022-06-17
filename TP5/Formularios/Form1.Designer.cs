@@ -60,6 +60,10 @@
             this.checkbox_columnas = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label_resultado_promedio = new System.Windows.Forms.Label();
+            this.kValue = new System.Windows.Forms.TextBox();
+            this.hValue = new System.Windows.Forms.TextBox();
+            this.kLabel = new System.Windows.Forms.Label();
+            this.hLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_simulacion)).BeginInit();
             this.SuspendLayout();
             // 
@@ -372,17 +376,56 @@
             // 
             this.label_resultado_promedio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_resultado_promedio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_resultado_promedio.Location = new System.Drawing.Point(1168, 47);
+            this.label_resultado_promedio.Location = new System.Drawing.Point(1157, 32);
             this.label_resultado_promedio.Name = "label_resultado_promedio";
             this.label_resultado_promedio.Size = new System.Drawing.Size(145, 63);
             this.label_resultado_promedio.TabIndex = 29;
             this.label_resultado_promedio.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // kValue
+            // 
+            this.kValue.Location = new System.Drawing.Point(1157, 99);
+            this.kValue.Name = "kValue";
+            this.kValue.Size = new System.Drawing.Size(50, 20);
+            this.kValue.TabIndex = 30;
+            this.kValue.TextChanged += new System.EventHandler(this.kValue_TextChanged);
+            // 
+            // hValue
+            // 
+            this.hValue.Location = new System.Drawing.Point(1238, 100);
+            this.hValue.Name = "hValue";
+            this.hValue.Size = new System.Drawing.Size(50, 20);
+            this.hValue.TabIndex = 31;
+            this.hValue.Text = "0,1";
+            this.hValue.TextChanged += new System.EventHandler(this.hValue_TextChanged);
+            // 
+            // kLabel
+            // 
+            this.kLabel.AutoSize = true;
+            this.kLabel.Location = new System.Drawing.Point(1138, 102);
+            this.kLabel.Name = "kLabel";
+            this.kLabel.Size = new System.Drawing.Size(13, 13);
+            this.kLabel.TabIndex = 32;
+            this.kLabel.Text = "k";
+            // 
+            // hLabel
+            // 
+            this.hLabel.AutoSize = true;
+            this.hLabel.Location = new System.Drawing.Point(1219, 102);
+            this.hLabel.Name = "hLabel";
+            this.hLabel.Size = new System.Drawing.Size(13, 13);
+            this.hLabel.TabIndex = 33;
+            this.hLabel.Text = "h";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1478, 833);
+            this.Controls.Add(this.hLabel);
+            this.Controls.Add(this.kLabel);
+            this.Controls.Add(this.hValue);
+            this.Controls.Add(this.kValue);
             this.Controls.Add(this.label_resultado_promedio);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.checkbox_columnas);
@@ -459,6 +502,10 @@
         private System.Windows.Forms.CheckBox checkbox_columnas;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label_resultado_promedio;
+        private System.Windows.Forms.TextBox kValue;
+        private System.Windows.Forms.TextBox hValue;
+        private System.Windows.Forms.Label kLabel;
+        private System.Windows.Forms.Label hLabel;
     }
 }
 

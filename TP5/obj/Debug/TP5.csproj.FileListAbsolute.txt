@@ -1,0 +1,10 @@
+D:\Programacion\TP5_SIM\TP5\bin\Debug\TP5.exe.config
+D:\Programacion\TP5_SIM\TP5\bin\Debug\TP5.exe
+D:\Programacion\TP5_SIM\TP5\bin\Debug\TP5.pdb
+D:\Programacion\TP5_SIM\TP5\obj\Debug\TP5.csproj.AssemblyReference.cache
+D:\Programacion\TP5_SIM\TP5\obj\Debug\TP5.Form1.resources
+D:\Programacion\TP5_SIM\TP5\obj\Debug\TP5.Properties.Resources.resources
+D:\Programacion\TP5_SIM\TP5\obj\Debug\TP5.csproj.GenerateResource.cache
+D:\Programacion\TP5_SIM\TP5\obj\Debug\TP5.csproj.CoreCompileInputs.cache
+D:\Programacion\TP5_SIM\TP5\obj\Debug\TP5.exe
+D:\Programacion\TP5_SIM\TP5\obj\Debug\TP5.pdb

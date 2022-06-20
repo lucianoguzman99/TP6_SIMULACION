@@ -49,6 +49,12 @@
     <Compile Include="Clases\Cliente.cs" />
     <Compile Include="Clases\Empleado.cs" />
     <Compile Include="Clases\Simulacion.cs" />
+    <Compile Include="Formularios\EulerFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EulerFrm.Designer.cs">
+      <DependentUpon>EulerFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\EulerFrm.resx">
+      <DependentUpon>EulerFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

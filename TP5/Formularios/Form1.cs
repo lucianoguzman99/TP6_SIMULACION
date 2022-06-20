@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TP5.Clases;
+using TP5.Formularios;
 
 namespace TP5
 {
@@ -121,7 +122,18 @@ namespace TP5
         }
 
         private void btn_simular_Click(object sender, EventArgs e)
-        {            
+        {
+            EulerFrm euler = new EulerFrm(100);
+            euler.GenerarEuler();
+            euler.Show();
+
+            EulerFrm euler2 = new EulerFrm(200);
+            euler2.GenerarEuler();
+            euler2.Show();
+
+            EulerFrm euler3 = new EulerFrm(350);
+            euler3.GenerarEuler();
+            euler3.Show();
             if (validar_campos())
             {
                 Simulacion simulacion = new Simulacion(this);

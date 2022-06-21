@@ -41,3 +41,15 @@ C:\Users\gino_\OneDrive\Escritorio\Facultad\SIM-2022\Trabajos_practicos\TP6\prog
 C:\Users\gino_\OneDrive\Escritorio\Facultad\SIM-2022\Trabajos_practicos\TP6\programa\TP5\obj\Debug\TP5.csproj.CoreCompileInputs.cache
 C:\Users\gino_\OneDrive\Escritorio\Facultad\SIM-2022\Trabajos_practicos\TP6\programa\TP5\obj\Debug\TP5.exe
 C:\Users\gino_\OneDrive\Escritorio\Facultad\SIM-2022\Trabajos_practicos\TP6\programa\TP5\obj\Debug\TP5.pdb
+E:\ProyectosGit\TP6\TP6_SIMULACION\TP5\bin\Debug\TP5.exe.config
+E:\ProyectosGit\TP6\TP6_SIMULACION\TP5\bin\Debug\TP5.exe
+E:\ProyectosGit\TP6\TP6_SIMULACION\TP5\bin\Debug\TP5.pdb
+E:\ProyectosGit\TP6\TP6_SIMULACION\TP5\obj\Debug\TP5.csproj.AssemblyReference.cache
+E:\ProyectosGit\TP6\TP6_SIMULACION\TP5\obj\Debug\TP5.csproj.SuggestedBindingRedirects.cache
+E:\ProyectosGit\TP6\TP6_SIMULACION\TP5\obj\Debug\TP5.Formularios.EulerFrm.resources
+E:\ProyectosGit\TP6\TP6_SIMULACION\TP5\obj\Debug\TP5.Form1.resources
+E:\ProyectosGit\TP6\TP6_SIMULACION\TP5\obj\Debug\TP5.Properties.Resources.resources
+E:\ProyectosGit\TP6\TP6_SIMULACION\TP5\obj\Debug\TP5.csproj.GenerateResource.cache
+E:\ProyectosGit\TP6\TP6_SIMULACION\TP5\obj\Debug\TP5.csproj.CoreCompileInputs.cache
+E:\ProyectosGit\TP6\TP6_SIMULACION\TP5\obj\Debug\TP5.exe
+E:\ProyectosGit\TP6\TP6_SIMULACION\TP5\obj\Debug\TP5.pdb

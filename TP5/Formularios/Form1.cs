@@ -27,8 +27,8 @@ namespace TP5
         public double porc_retiran_biblo;
         public int tiempo_uso_instalacion ;
         public bool mostrar_columnas_estado = true;
-        public double k;
-        public double h;
+        public double k = 0;
+        public double h = 0;
         public DataTable data1;
         public DataTable data2;
         public DataTable data3;
@@ -228,15 +228,8 @@ namespace TP5
             this.mostrar_columnas_estado = !this.mostrar_columnas_estado;
         }
 
-        private void kValue_TextChanged(object sender, EventArgs e)
-        {
-            this.kValue = this.kValue;
-        }
+        public void kValue_TextChanged(object sender, EventArgs e) => k = double.Parse(this.kValue.Text) ;
 
-        private void hValue_TextChanged(object sender, EventArgs e)
-        {
-            this.hValue = this.hValue;
-
-        }
+        public void hValue_TextChanged(object sender, EventArgs e) => h = double.Parse(this.hValue.Text);
     }
 }

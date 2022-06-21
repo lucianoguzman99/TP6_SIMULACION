@@ -42,6 +42,7 @@ namespace TP5.Clases
         // Euler
         private int k;
         private double kDynamic;
+        private double hDynamic;
         private double h;
         private double tiempoLectura;
 
@@ -60,9 +61,13 @@ namespace TP5.Clases
 
         private void euler()
         {
-            // TO DO:
-            // if H no es cargada:
-            double h = 0.1;
+            double hDynamic = formulario.h;
+            if (hDynamic == 0) {
+                h = 0.1;
+            } else
+            {
+                h = hDynamic;
+            }
 
             int[] valuesEuler = { 100, 200, 300 };
 
@@ -72,7 +77,6 @@ namespace TP5.Clases
                 Console.WriteLine("\n\n\n");
             }
         }
-
 
         private void createEuler(double aux, double h)
         {
@@ -441,8 +445,8 @@ namespace TP5.Clases
                 rnd_permanencia = redondear(random.NextDouble());
                 if (calcular_probabilidad_permanencia(rnd_permanencia))
                 {
-                    // TO DO: TOMAR VALOR DE CARGA DE K 
-                    // if  K no es cargada:
+                    kDynamic = formulario.k;
+                    Console.WriteLine("\t\t\t\t" + kDynamic);
                     double rndEuler = random.NextDouble();
                     k = (int)(100 + rndEuler * (350 - 100));
 

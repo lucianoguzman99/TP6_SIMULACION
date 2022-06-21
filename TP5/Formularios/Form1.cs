@@ -29,6 +29,9 @@ namespace TP5
         public bool mostrar_columnas_estado = true;
         public double k;
         public double h;
+        public DataTable data1;
+        public DataTable data2;
+        public DataTable data3;
 
 
         public Form1()
@@ -125,14 +128,17 @@ namespace TP5
         {
             EulerFrm euler = new EulerFrm(100);
             euler.GenerarEuler();
+            data1 = euler.GetDT();
             euler.Show();
 
             EulerFrm euler2 = new EulerFrm(200);
             euler2.GenerarEuler();
+            data2 = euler2.GetDT();
             euler2.Show();
 
             EulerFrm euler3 = new EulerFrm(350);
             euler3.GenerarEuler();
+            data3 = euler3.GetDT();
             euler3.Show();
             if (validar_campos())
             {

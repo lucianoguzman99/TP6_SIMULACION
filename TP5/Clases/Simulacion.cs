@@ -472,18 +472,25 @@ namespace TP5.Clases
 
         private void validateK(double k)
         {
+            
             // Siempre da el mismo valor xd
             if (100 <= k && k < 200)
             {
-                tiempoLectura = tiempo1 * 10;
+                //tiempoLectura = tiempo1 * 10;
+                DataTable dtAux = formulario.data1;
+                tiempoLectura = double.Parse(dtAux.Rows[dtAux.Rows.Count - 1][0].ToString()) * 10;
             }
             else if (200 <= k && k <= 300)
             {
-                tiempoLectura = tiempo2 *10;
+                //tiempoLectura = tiempo2 * 10;
+                DataTable dtAux = formulario.data2;
+                tiempoLectura = double.Parse(dtAux.Rows[dtAux.Rows.Count - 1][0].ToString()) * 10;
             }
             else
             {
-                tiempoLectura = tiempo3 *10;
+                //tiempoLectura = tiempo3 * 10;
+                DataTable dtAux = formulario.data3;
+                tiempoLectura = double.Parse(dtAux.Rows[dtAux.Rows.Count - 1][0].ToString()) * 10;
             }
         }
 

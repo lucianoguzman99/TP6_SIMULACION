@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\TP5",
-    "\\TP5\\Clases"
+    "\\TP5\\Clases",
+    "\\TP5\\Formularios"
   ],
-  "SelectedNode": "\\TP5\\Clases\\Simulacion.cs",
+  "SelectedNode": "\\TP5\\Formularios\\EulerFrm.cs",
   "PreviewInSolutionExplorer": false
 }

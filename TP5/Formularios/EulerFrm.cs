@@ -92,5 +92,10 @@ namespace TP5.Formularios
 
 
         }
+
+        public DataTable GetDT()
+        {
+            return this.dataTable;
+        }
     }
 }

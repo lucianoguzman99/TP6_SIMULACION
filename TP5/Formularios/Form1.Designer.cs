@@ -193,7 +193,7 @@
             this.label_titulo.Name = "label_titulo";
             this.label_titulo.Size = new System.Drawing.Size(261, 25);
             this.label_titulo.TabIndex = 13;
-            this.label_titulo.Text = "TP 5 - Simulación colas";
+            this.label_titulo.Text = "TP 6 - Simulación colas";
             // 
             // label_subtitulo
             // 
@@ -396,7 +396,6 @@
             this.hValue.Name = "hValue";
             this.hValue.Size = new System.Drawing.Size(50, 20);
             this.hValue.TabIndex = 31;
-            this.hValue.Text = "0.1";
             this.hValue.TextChanged += new System.EventHandler(this.hValue_TextChanged);
             // 
             // kLabel
@@ -460,7 +459,7 @@
             this.Controls.Add(this.dgv_simulacion);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TP 5 Simulacion - Grupo 6";
+            this.Text = "TP 6 Simulacion - Grupo 6";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_simulacion)).EndInit();
             this.ResumeLayout(false);

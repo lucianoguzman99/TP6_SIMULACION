@@ -76,7 +76,7 @@
             this.dgv_simulacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_simulacion.Location = new System.Drawing.Point(12, 125);
             this.dgv_simulacion.Name = "dgv_simulacion";
-            this.dgv_simulacion.Size = new System.Drawing.Size(1447, 696);
+            this.dgv_simulacion.Size = new System.Drawing.Size(1447, 612);
             this.dgv_simulacion.TabIndex = 10;
             // 
             // txt_tiempo_simular

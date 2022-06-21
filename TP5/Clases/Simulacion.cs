@@ -139,6 +139,7 @@ namespace TP5.Clases
             dataTable.Columns.Add("Estado (E2)");
             dataTable.Columns.Add("Cola");
             dataTable.Columns.Add("Contador atencion");
+
             dataTable.Columns.Add("Tiempo permanencia");
         }
 

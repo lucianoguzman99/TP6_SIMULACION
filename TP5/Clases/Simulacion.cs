@@ -445,10 +445,15 @@ namespace TP5.Clases
                 rnd_permanencia = redondear(random.NextDouble());
                 if (calcular_probabilidad_permanencia(rnd_permanencia))
                 {
-                    kDynamic = formulario.k;
-                    Console.WriteLine("\t\t\t\t" + kDynamic);
                     double rndEuler = random.NextDouble();
-                    k = (int)(100 + rndEuler * (350 - 100));
+                    kDynamic = formulario.k;
+                    if (kDynamic == 0) {
+                        k = (int)(100 + rndEuler * (350 - 100));
+                    } else
+                    {
+                        k = (int)kDynamic;
+                    }
+                    
 
                     // Funcion validar K con tabla
                     validateK(k);

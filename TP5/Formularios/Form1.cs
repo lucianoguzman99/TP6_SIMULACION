@@ -126,17 +126,17 @@ namespace TP5
 
         private void btn_simular_Click(object sender, EventArgs e)
         {
-            EulerFrm euler = new EulerFrm(100);
+            EulerFrm euler = new EulerFrm(100, h);
             euler.GenerarEuler();
             data1 = euler.GetDT();
             euler.Show();
 
-            EulerFrm euler2 = new EulerFrm(200);
+            EulerFrm euler2 = new EulerFrm(200,h);
             euler2.GenerarEuler();
             data2 = euler2.GetDT();
             euler2.Show();
 
-            EulerFrm euler3 = new EulerFrm(350);
+            EulerFrm euler3 = new EulerFrm(350,h);
             euler3.GenerarEuler();
             data3 = euler3.GetDT();
             euler3.Show();

@@ -396,7 +396,7 @@
             this.hValue.Name = "hValue";
             this.hValue.Size = new System.Drawing.Size(50, 20);
             this.hValue.TabIndex = 31;
-            this.hValue.Text = "0,1";
+            this.hValue.Text = "0.1";
             this.hValue.TextChanged += new System.EventHandler(this.hValue_TextChanged);
             // 
             // kLabel

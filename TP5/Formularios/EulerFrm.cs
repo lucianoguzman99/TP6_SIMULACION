@@ -24,10 +24,10 @@ namespace TP5.Formularios
         private DataTable dataTable;
 
 
-        public EulerFrm(double k)
+        public EulerFrm(double k, double h)
         {
             this.k = k;
-            //this.h = h;
+            this.h = h ;
             InitializeComponent();
         }
 

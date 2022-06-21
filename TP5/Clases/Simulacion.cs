@@ -453,7 +453,6 @@ namespace TP5.Clases
                     {
                         k = (int)kDynamic;
                     }
-                    
 
                     // Funcion validar K con tabla
                     validateK(k);
